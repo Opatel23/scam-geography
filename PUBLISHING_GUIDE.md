@@ -7,11 +7,11 @@
 5. Use the description: `Interactive economics analysis of reported online fraud across U.S. states, 2022–2025.`
 6. Add these repository topics: `economics`, `econometrics`, `excel-dashboard`, `panel-data`, `cybercrime`, and `data-visualization`.
 
-The README is already formatted to become the repository's main portfolio page. Before changing visibility to public, verify that all five images display and that the Excel download link works.
+The README is already formatted to become the repository's main portfolio page. Before changing visibility to public, verify that all six images display and that the Excel download link works.
 
 ## Final pre-publication checklist
 
-- Open the workbook in desktop Excel, review `Start Here`, test all four comparison controls, and change the three yellow inputs on `Scenario Lab`.
+- Open the workbook in desktop Excel, review `Start Here`, test the comparison controls, change state and year on `State Scorecard`, and change the three yellow inputs on `Scenario Lab`.
 - Confirm your preferred display name is **Om**.
 - Review the README's findings and limitations.
 - Confirm the repository contains no Excel lock files beginning with `~$`.

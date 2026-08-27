@@ -12,11 +12,13 @@ The centerpiece is an interactive Excel economics lab. Users can select a year, 
 
 ![Interactive economics lab](images/interactive-econ-lab.png)
 
+![Interactive state scorecard](images/state-scorecard.png)
+
 ![Model scenario lab](images/scenario-lab.png)
 
 ## Download and explore
 
-Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on the `Start Here` worksheet, continue to `Interactive Econ Lab`, and then test the `Scenario Lab`.
+Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on `Start Here`, compare places in `Interactive Econ Lab`, build a profile in `State Scorecard`, and then test `Scenario Lab`.
 
 On the `Interactive Econ Lab` worksheet, use the yellow dropdown cells to:
 
@@ -28,6 +30,8 @@ On the `Interactive Econ Lab` worksheet, use the yellow dropdown cells to:
 - compare pooled, fixed-effects, and outlier-robust regression evidence.
 
 The `Scenario Lab` turns the estimated income elasticities into an interactive sensitivity exercise. Choose a state and year, enter a hypothetical income change, and compare the model-implied loss-per-person response under three specifications. The sheet clearly labels these results as associations rather than causal forecasts.
+
+The `State Scorecard` ranks a selected jurisdiction's reported exposure, loss severity, and overall economic harm against all states and Washington, D.C. It also assigns an exposure–severity quadrant, making it easier to discuss why different fraud profiles could call for different prevention strategies.
 
 ## Economics behind the project
 
