@@ -8,17 +8,20 @@ This project combines FBI Internet Crime Complaint Center data with U.S. Census 
 
 The centerpiece is an interactive Excel economics lab. Users can select a year, compare two states, change the outcome being measured, and watch the tables and trend graph update automatically.
 
+![Portfolio overview](images/start-here.png)
+
 ![Interactive economics lab](images/interactive-econ-lab.png)
 
 ## Download and explore
 
-Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in Microsoft Excel.
+Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on the `Start Here` worksheet, then continue to `Interactive Econ Lab`.
 
 On the `Interactive Econ Lab` worksheet, use the yellow dropdown cells to:
 
 - choose a year from 2022–2025;
 - compare any two states;
 - switch between reported loss per person, complaints per 100,000 residents, and loss per complaint;
+- see the percentage gap between the selected states for each economic measure;
 - identify whether geographic differences reflect exposure, loss severity, or both; and
 - compare pooled, fixed-effects, and outlier-robust regression evidence.
 
