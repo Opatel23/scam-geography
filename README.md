@@ -12,9 +12,11 @@ The centerpiece is an interactive Excel economics lab. Users can select a year, 
 
 ![Interactive economics lab](images/interactive-econ-lab.png)
 
+![Model scenario lab](images/scenario-lab.png)
+
 ## Download and explore
 
-Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on the `Start Here` worksheet, then continue to `Interactive Econ Lab`.
+Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on the `Start Here` worksheet, continue to `Interactive Econ Lab`, and then test the `Scenario Lab`.
 
 On the `Interactive Econ Lab` worksheet, use the yellow dropdown cells to:
 
@@ -24,6 +26,8 @@ On the `Interactive Econ Lab` worksheet, use the yellow dropdown cells to:
 - see the percentage gap between the selected states for each economic measure;
 - identify whether geographic differences reflect exposure, loss severity, or both; and
 - compare pooled, fixed-effects, and outlier-robust regression evidence.
+
+The `Scenario Lab` turns the estimated income elasticities into an interactive sensitivity exercise. Choose a state and year, enter a hypothetical income change, and compare the model-implied loss-per-person response under three specifications. The sheet clearly labels these results as associations rather than causal forecasts.
 
 ## Economics behind the project
 
