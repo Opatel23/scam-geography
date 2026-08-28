@@ -1,12 +1,12 @@
 # Scam Geography
 
-### An interactive economics project by Om
+### An interactive economics project by Om Patel
 
 **How are online-fraud losses distributed across the United States, and do income, internet access, and demographic differences help explain the geography?**
 
 This project combines FBI Internet Crime Complaint Center data with U.S. Census Bureau American Community Survey estimates to study reported online-fraud outcomes across 50 states and the District of Columbia from 2022 through 2025.
 
-The centerpiece is an interactive Excel economics lab. Users can select a year, compare two states, change the outcome being measured, and watch the tables and trend graph update automatically.
+The centerpiece is a guided Excel economics experience. Reviewers can compare states, diagnose whether exposure or severity drives economic harm, and stress-test how conclusions change across econometric specifications.
 
 ![Portfolio overview](images/start-here.png)
 
