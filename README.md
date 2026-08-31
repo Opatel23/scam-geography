@@ -20,7 +20,7 @@ The centerpiece is a guided Excel economics experience. Reviewers can compare st
 
 Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on `Start Here`, compare places in `Interactive Econ Lab`, build a profile in `State Scorecard`, and then test `Scenario Lab`.
 
-On the `Interactive Econ Lab` worksheet, use the yellow dropdown cells to:
+On the `Interactive Econ Lab` worksheet, adjust the warm cream input cells to:
 
 - choose a year from 2022–2025;
 - compare any two states;
