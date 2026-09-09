@@ -1,90 +1,119 @@
 # Scam Geography
 
-### An interactive economics project by Om Patel
+**The economics of reported online fraud across U.S. states**
 
-**How are online-fraud losses distributed across the United States, and do income, internet access, and demographic differences help explain the geography?**
+An individual research project by **Om Patel** · 2022–2025 · 51 jurisdictions · 204 state-year observations
 
-This project combines FBI Internet Crime Complaint Center data with U.S. Census Bureau American Community Survey estimates to study reported online-fraud outcomes across 50 states and the District of Columbia from 2022 through 2025.
+Where does reported online fraud impose the greatest economic harm—and how are those differences associated with income, internet access, and demographics?
 
-The centerpiece is a guided Excel economics experience. Reviewers can compare states, diagnose whether exposure or severity drives economic harm, and stress-test how conclusions change across econometric specifications.
+Explore the question in Excel: compare states, separate reported exposure from loss severity, and examine how the evidence changes across statistical models.
 
-![Portfolio overview](images/start-here.png)
+**[Open the workbook download page](Scam_Geography_Interactive_Economics_Project.xlsx)** · [Explore the data](data/state_panel_2022_2025.csv) · [Variable definitions](DATA_DICTIONARY.md)
 
-![Interactive economics lab](images/interactive-econ-lab.png)
+On the workbook page, choose **Download raw file**, then open the downloaded file in desktop Microsoft Excel. The images below are previews; the interactive controls are inside the workbook.
 
-![Interactive state scorecard](images/state-scorecard.png)
+![Scam Geography overview with research question, coverage, and economic framework](images/start-here.png)
 
-![Model scenario lab](images/scenario-lab.png)
+## Take a five-minute tour
 
-## Download and explore
+| Step | Worksheet | Try it |
+| --- | --- | --- |
+| 1 | Start Here | Read the research question and the guide to the evidence. |
+| 2 | Interactive Econ Lab | Compare North Carolina with California. Change the year and outcome using the cream input cells. |
+| 3 | State Scorecard | Choose a state and examine its exposure, severity, percentile, and rank. |
+| 4 | Scenario Lab | Enter a hypothetical income change and compare the three model implications. |
+| 5 | Panel Dashboard | Compare the national trend with regional results, then review the model limitations. |
 
-Download **[Scam_Geography_Interactive_Economics_Project.xlsx](Scam_Geography_Interactive_Economics_Project.xlsx)** and open it in desktop Microsoft Excel. Begin on `Start Here`, compare places in `Interactive Econ Lab`, build a profile in `State Scorecard`, and then test `Scenario Lab`.
+As you explore, ask: does a state's reported economic harm reflect more complaints per resident, larger losses per complaint, or both?
 
-On the `Interactive Econ Lab` worksheet, adjust the warm cream input cells to:
+<details>
+<summary><strong>Preview the interactive comparison lab</strong></summary>
 
-- choose a year from 2022–2025;
-- compare any two states;
-- switch between reported loss per person, complaints per 100,000 residents, and loss per complaint;
-- see the percentage gap between the selected states for each economic measure;
-- identify whether geographic differences reflect exposure, loss severity, or both; and
-- compare pooled, fixed-effects, and outlier-robust regression evidence.
+Compare two states across years and outcomes. Percentage gaps and a four-year chart respond to your selections; the model summary provides context for interpreting the evidence.
 
-The `Scenario Lab` turns the estimated income elasticities into an interactive sensitivity exercise. Choose a state and year, enter a hypothetical income change, and compare the model-implied loss-per-person response under three specifications. The sheet clearly labels these results as associations rather than causal forecasts.
+![Interactive comparison lab with year, state, and outcome selectors](images/interactive-econ-lab.png)
 
-The `State Scorecard` ranks a selected jurisdiction's reported exposure, loss severity, and overall economic harm against all states and Washington, D.C. It also assigns an exposure–severity quadrant, making it easier to discuss why different fraud profiles could call for different prevention strategies.
+</details>
 
-## Economics behind the project
+<details>
+<summary><strong>Preview the state scorecard and scenario lab</strong></summary>
 
-The analysis uses the accounting identity:
+The scorecard places a selected jurisdiction in the distribution of reported exposure, loss severity, and overall harm. Its exposure–severity quadrant helps identify the mechanism behind a ranking.
+
+![State scorecard with percentile measures and exposure–severity quadrant](images/state-scorecard.png)
+
+The scenario lab translates estimated income elasticities into model-implied changes in loss per person. Use it to explore sensitivity to model choice. These associations do not establish the effect of an income policy.
+
+![Scenario lab comparing baseline and model-implied loss per person](images/scenario-lab.png)
+
+</details>
+
+## The economic framework
 
 > **Reported loss per person = complaints per person × reported loss per complaint**
 
-This separates two economic mechanisms:
+This accounting identity separates reported exposure from severity:
 
-- **Exposure:** how frequently residents report being affected.
-- **Severity:** how much money is lost in an average reported complaint.
+- **Reported exposure:** complaints relative to population.
+- **Severity:** dollars lost per reported complaint.
 
-The empirical models test whether median household income, the share of residents age 65 or older, and household internet access are associated with these outcomes. Year effects capture nationwide changes, while state-and-year fixed effects distinguish persistent geographic differences from changes within a state over time.
+Complaint rates displayed per 100,000 residents must be divided by 100,000 before applying the identity.
 
-## Main findings
+The models examine how median household income, the share of residents age 65 or older, and household internet access are associated with these outcomes. Year effects account for common annual shifts. State-and-year fixed effects examine changes within states while accounting for persistent state differences.
 
-1. Reported loss per resident increased substantially between 2022 and 2025.
-2. Higher-income states tend to report greater losses per resident in comparisons across states.
-3. The pooled income elasticity of loss per capita is approximately **1.55** and is statistically significant.
-4. Excluding Washington, D.C. leaves a positive elasticity of approximately **0.89**, suggesting the association is not driven by one extreme jurisdiction.
-5. The state-and-year fixed-effects estimate is positive but statistically imprecise. The project therefore interprets income as a marker of target value and correlated geographic characteristics—not as proof that income growth causes fraud.
+## What the evidence suggests
 
-![Four-year panel dashboard](images/panel-dashboard.png)
+Reported loss per resident increased substantially from 2022 to 2025. Higher-income states tend to report greater losses per resident in comparisons across states, but the within-state evidence is less precise.
 
-![State-level dashboard](images/state-dashboard.png)
+| Evidence | Estimated income elasticity | Interpretation |
+| --- | ---: | --- |
+| Pooled model with year effects | 1.55 | Positive association in the pooled state panel. |
+| Excluding Washington, D.C. | 0.89 | The positive association persists without D.C. |
+| State-and-year fixed effects | 2.19 | Positive estimate, but statistically imprecise. |
+
+The estimates support a geographic association. They do not establish that raising income causes higher fraud losses. See `Panel Models` for standard errors, approximate p-values, and additional robustness checks.
+
+<details>
+<summary><strong>Preview the national, regional, and state dashboards</strong></summary>
+
+![Four-year panel dashboard with national trend and all regional observations](images/panel-dashboard.png)
+
+![State dashboard with reported loss rankings and income comparison](images/state-dashboard.png)
+
+</details>
 
 ## Data and methods
 
-- **Unit of observation:** state-year
-- **Coverage:** 50 states and the District of Columbia, 2022–2025
-- **Observations:** 204
-- **Fraud outcomes:** complaints and reported losses from FBI IC3 annual reports
-- **Economic and demographic variables:** population, median household income, age structure, and internet subscription from ACS one-year estimates
-- **Timing:** ACS characteristics are lagged one year
-- **Models:** pooled OLS with year effects; state-and-year fixed effects; D.C.-exclusion and winsorization robustness checks
-- **Inference:** HC1 heteroskedasticity-robust standard errors with normal-approximation p-values
+The project combines FBI Internet Crime Complaint Center annual reports with U.S. Census Bureau American Community Survey estimates.
 
-The analysis-ready panel is available in [`data/state_panel_2022_2025.csv`](data/state_panel_2022_2025.csv).
-Variable definitions are documented in [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md).
+| Component | Approach |
+| --- | --- |
+| Coverage | 50 states and Washington, D.C.; 2022–2025 |
+| Unit of analysis | State-year; 204 observations |
+| Outcomes | Reported complaints, reported losses, and population-scaled measures |
+| Explanatory variables | Median household income, age structure, and household internet access |
+| Timing | ACS characteristics lagged one year |
+| Panel models | Pooled OLS with year effects; state-and-year fixed effects |
+| Robustness | D.C. exclusion and winsorization |
+| Panel inference | HC1 heteroskedasticity-robust standard errors; normal-approximation p-values |
 
-## Limitations
+The [analysis-ready panel](data/state_panel_2022_2025.csv) and [data dictionary](DATA_DICTIONARY.md) accompany the workbook. Its data and model worksheets make the calculations and evidence available for inspection.
 
-IC3 complaints are voluntary reports rather than a complete measure of fraud incidence. Reporting behavior may differ across states, extreme incidents can affect state averages, and ecological results cannot establish individual-level risk. The regression estimates are descriptive associations, not causal effects.
+## Limits of the analysis
+
+IC3 complaints are voluntary reports, so the data measure reported outcomes rather than total fraud incidence. Reporting behavior and extreme incidents can influence state averages. State-level associations cannot establish individual risk or causal effects.
+
+Four years provide limited within-state variation. HC1 standard errors address heteroskedasticity; they do not account for within-state serial correlation through state clustering.
 
 ## Sources
 
 - [FBI Internet Crime Complaint Center annual reports](https://www.ic3.gov/AnnualReport/Reports)
 - [U.S. Census Bureau American Community Survey](https://www.census.gov/programs-surveys/acs)
 
-## Portfolio summary
+Report and data links are also recorded in the workbook.
 
-> Built an interactive Excel economics dashboard using a 204-observation state panel of FBI IC3 and Census ACS data. Applied economic decomposition, pooled regression, two-way fixed effects, and robustness tests to examine geographic differences in reported online-fraud exposure and loss severity.
+---
 
-## Tools demonstrated
+**Skills demonstrated:** Excel · data visualization · economic decomposition · panel data · regression · fixed effects · robustness analysis
 
-`Excel` · `Data visualization` · `Econometrics` · `Panel data` · `Fixed effects` · `Robustness testing` · `Economic interpretation`
+**Portfolio summary:** Built an interactive Excel economics project using 204 state-year observations from FBI IC3 and Census ACS data to investigate geographic differences in reported online-fraud exposure and loss severity.
