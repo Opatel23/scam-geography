@@ -1,26 +1,58 @@
-# Publishing this project on GitHub
+# Publication checklist
 
-1. Create the repository as **private** while reviewing it. Change its visibility to public only when you are ready to publish.
-2. Add the contents of this folder to the repository. Upload the files and folders themselves, not the outer portfolio folder.
-3. Use the commit message `Publish Scam Geography economics project`.
-4. After making the repository public, add it to the Projects section of your résumé, LinkedIn profile, or portfolio.
-5. Use the description: `Interactive economics analysis of reported online fraud across U.S. states, 2022–2025.`
-6. Add these repository topics: `economics`, `econometrics`, `excel-dashboard`, `panel-data`, `cybercrime`, and `data-visualization`.
+Scam Geography is an individual economics project by **Om Patel**. Keep the repository private until you have completed the checks below and are ready to publish it.
 
-The README is already formatted to become the repository's main portfolio page. Before changing visibility to public, verify that all six images display and that the Excel download link works.
+[Project overview](README.md) · [Data dictionary](DATA_DICTIONARY.md)
 
-## Final pre-publication checklist
+## Test the reader experience
 
-- Open the workbook in desktop Excel, review `Start Here`, test the comparison controls, change state and year on `State Scorecard`, and change the three yellow inputs on `Scenario Lab`.
-- Confirm your preferred display name is **Om**.
-- Review the README's findings and limitations.
-- Confirm the repository contains no Excel lock files beginning with `~$`.
-- Change the repository visibility from private to public only when everything looks right.
+Download a fresh copy of the workbook from GitHub and open it in desktop Excel. GitHub's workbook page and the PNG previews are not interactive.
 
-## Suggested résumé bullet
+| Check | Action | Expected result |
+|---|---|---|
+| Orientation | Open `Start Here` | The purpose and navigation are understandable without additional explanation. |
+| Comparison | In `Interactive Econ Lab`, change the year, both states, and outcome using the cream input cells | Labels, values, and comparisons reflect the selected inputs. |
+| Scorecard | Change state and year in `State Scorecard` | The profile, ranks, and interpretation update together. |
+| Scenario | In `Scenario Lab`, enter 0% income change | Scenario loss-per-person values equal the selected baseline. |
+| Sensitivity | Change income by 10%, then restore the original inputs | Scenario results update; the noncausal interpretation remains visible. |
+| Reopening | Save a test copy, close it, and reopen it | The copy retains its selected inputs and opens without repair warnings. |
 
-**Scam Geography — Independent Economics Project:** Built an interactive Excel dashboard and analyzed a 204-observation state panel using economic decomposition, fixed effects, and robustness tests to study geographic variation in reported online-fraud losses.
+If results appear unchanged, check that Excel calculation is set to Automatic and recalculate. Do not edit formula cells to force a result. Record any unresolved issue before publishing.
 
-## Suggested LinkedIn caption
+## Review presentation and research claims
 
-I built *Scam Geography*, an interactive economics project examining reported online-fraud exposure and loss severity across U.S. states from 2022–2025. The project combines FBI IC3 and Census ACS data and includes an Excel comparison lab, panel regressions, fixed effects, robustness checks, and clear limitations around causal interpretation.
+- [ ] Your name is consistent across the README and workbook.
+- [ ] All six preview images display on GitHub.
+- [ ] The workbook download and data links work.
+- [ ] The README agrees with the workbook's model estimates and limitations.
+- [ ] Reported complaints are not described as all fraud incidents or unique victims.
+- [ ] Associations and scenario calculations are not described as causal effects or forecasts.
+- [ ] The data dictionary explains units, lagged ACS timing, and rate denominators.
+- [ ] No Excel lock files beginning with `~$`, personal files, or credentials are included.
+- [ ] You have reviewed permissions for any included third-party material and decided how others may reuse your original work.
+
+Only change repository visibility when you choose to publish. These checks do not change visibility automatically.
+
+## Portfolio copy
+
+**Repository description**
+
+Interactive economics analysis of reported online fraud across U.S. states, 2022–2025.
+
+**Suggested topics**
+
+`economics`, `econometrics`, `excel-dashboard`, `panel-data`, `cybercrime`, `data-visualization`
+
+**Résumé bullet**
+
+Built an interactive Excel research project combining FBI IC3 and Census ACS data into a 204-observation state panel; used economic decomposition, fixed effects, and robustness checks to examine geographic variation in reported online-fraud losses.
+
+**Short introduction**
+
+I built *Scam Geography* to explore how reported online-fraud losses vary across U.S. states. Readers can compare states, examine complaint frequency and loss severity, and test income-change scenarios while seeing the limits of what the data can establish.
+
+## Suggested project citation
+
+Patel, Om. *Scam Geography: The Economics of Reported Online Fraud Across U.S. States, 2022–2025*. Interactive Excel research project. GitHub. https://github.com/Opatel23/scam-geography
+
+For a reproducible citation, append the commit SHA or release tag used and the access date. Cite the underlying FBI IC3 and Census ACS sources separately when using their data; this project citation does not replace those sources.
