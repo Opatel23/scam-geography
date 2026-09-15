@@ -14,6 +14,8 @@ On the workbook page, choose **Download raw file**, then open the downloaded fil
 
 ![Scam Geography overview with research question, coverage, and economic framework](images/start-here.png)
 
+[Tour](#take-a-five-minute-tour) · [Findings](#what-the-evidence-suggests) · [Methods](#data-and-methods) · [Limitations](#limits-of-the-analysis) · [Citation](#cite-this-project)
+
 ## Take a five-minute tour
 
 | Step | Worksheet | Try it |
@@ -38,7 +40,7 @@ Compare two states across years and outcomes. Percentage gaps and a four-year ch
 <details>
 <summary><strong>Preview the state scorecard and scenario lab</strong></summary>
 
-The scorecard places a selected jurisdiction in the distribution of reported exposure, loss severity, and overall harm. Its exposure–severity quadrant helps identify the mechanism behind a ranking.
+The scorecard places a selected jurisdiction in the distribution of reported exposure, loss severity, and overall harm. Its exposure–severity quadrant shows whether a ranking reflects complaint frequency, average reported loss severity, or both.
 
 ![State scorecard with percentile measures and exposure–severity quadrant](images/state-scorecard.png)
 
@@ -70,6 +72,8 @@ Reported loss per resident increased substantially from 2022 to 2025. Higher-inc
 | Pooled model with year effects | 1.55 | Positive association in the pooled state panel. |
 | Excluding Washington, D.C. | 0.89 | The positive association persists without D.C. |
 | State-and-year fixed effects | 2.19 | Positive estimate, but statistically imprecise. |
+
+**Reading the elasticity:** In the pooled model, 1% higher median household income is associated with approximately 1.55% higher reported loss per resident, holding the included controls and year effects constant. This is a percentage change, not a dollar change or a percentage-point change.
 
 The estimates support a geographic association. They do not establish that raising income causes higher fraud losses. See `Panel Models` for standard errors, approximate p-values, and additional robustness checks.
 
@@ -105,12 +109,28 @@ IC3 complaints are voluntary reports, so the data measure reported outcomes rath
 
 Four years provide limited within-state variation. HC1 standard errors address heteroskedasticity; they do not account for within-state serial correlation through state clustering.
 
+<details>
+<summary><strong>Workbook help</strong></summary>
+
+- **Where are the controls?** Open the downloaded workbook in desktop Excel and use the cream input cells. GitHub images are static previews.
+- **Values aren't updating?** Check that Excel calculation is set to Automatic, then recalculate.
+- **How do I check a scenario?** Set the income change to 0%; model-implied losses should match the selected baseline.
+- **Want to inspect the evidence?** Start with `Panel Data`, `Panel Models`, and `Sources & Notes`. See the [reader test checklist](PUBLISHING_GUIDE.md#test-the-reader-experience) for a fuller walkthrough.
+
+</details>
+
 ## Sources
 
 - [FBI Internet Crime Complaint Center annual reports](https://www.ic3.gov/AnnualReport/Reports)
 - [U.S. Census Bureau American Community Survey](https://www.census.gov/programs-surveys/acs)
 
 Report and data links are also recorded in the workbook.
+
+## Cite this project
+
+Patel, Om. *Scam Geography: The Economics of Reported Online Fraud Across U.S. States, 2022–2025*. Interactive Excel research project. [GitHub repository](https://github.com/Opatel23/scam-geography).
+
+Include the commit SHA or release tag and your access date when citing a particular version. Cite the underlying data sources separately when using their data.
 
 ---
 
