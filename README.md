@@ -4,17 +4,17 @@
 
 An individual research project by **Om Patel** · 2022–2025 · 51 jurisdictions · 204 state-year observations
 
-Where does reported online fraud impose the greatest economic harm—and how are those differences associated with income, internet access, and demographics?
+Why do some states report more fraud losses per resident than others?
 
-Explore the question in Excel: compare states, separate reported exposure from loss severity, and examine how the evidence changes across statistical models.
+An interactive Excel investigation of complaint frequency, loss severity, and their relationship with income, internet access, and demographics. Compare states, explore a four-year panel, and test how model choice changes the interpretation.
 
 **[Open the workbook download page](Scam_Geography_Interactive_Economics_Project.xlsx)** · [Explore the data](data/state_panel_2022_2025.csv) · [Variable definitions](DATA_DICTIONARY.md)
 
 On the workbook page, choose **Download raw file**, then open the downloaded file in desktop Microsoft Excel. The images below are previews; the interactive controls are inside the workbook.
 
-![Scam Geography overview with research question, coverage, and economic framework](images/start-here.png)
-
 [Tour](#take-a-five-minute-tour) · [Findings](#what-the-evidence-suggests) · [Methods](#data-and-methods) · [Limitations](#limits-of-the-analysis) · [Citation](#cite-this-project)
+
+![Scam Geography overview with research question, coverage, and economic framework](images/start-here.png)
 
 ## Take a five-minute tour
 
@@ -26,7 +26,7 @@ On the workbook page, choose **Download raw file**, then open the downloaded fil
 | 4 | Scenario Lab | Enter a hypothetical income change and compare the three model implications. |
 | 5 | Panel Dashboard | Compare the national trend with regional results, then review the model limitations. |
 
-As you explore, ask: does a state's reported economic harm reflect more complaints per resident, larger losses per complaint, or both?
+**Try a two-minute investigation:** Compare North Carolina with California in the same year. Note which has higher loss per resident, then switch to complaints per 100,000 and loss per complaint. Does complaint frequency, loss severity, or both explain the difference? Change the year to see whether the pattern holds.
 
 <details>
 <summary><strong>Preview the interactive comparison lab</strong></summary>
@@ -65,7 +65,9 @@ The models examine how median household income, the share of residents age 65 or
 
 ## What the evidence suggests
 
-Reported loss per resident increased substantially from 2022 to 2025. Higher-income states tend to report greater losses per resident in comparisons across states, but the within-state evidence is less precise.
+**Main takeaway:** Higher-income states tend to report greater losses per resident in cross-state comparisons; the within-state evidence is less precise. Model choice changes the size and certainty of the estimated relationship.
+
+Reported loss per resident also increased substantially from 2022 to 2025.
 
 | Evidence | Estimated income elasticity | Interpretation |
 | --- | ---: | --- |
