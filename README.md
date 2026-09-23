@@ -8,7 +8,7 @@ Why do some states report more fraud losses per resident than others?
 
 An interactive Excel investigation of complaint frequency, loss severity, and their relationship with income, internet access, and demographics. Compare states, explore a four-year panel, and test how model choice changes the interpretation.
 
-**[Open the workbook download page](Scam_Geography_Interactive_Economics_Project.xlsx)** · [Explore the data](data/state_panel_2022_2025.csv) · [Variable definitions](DATA_DICTIONARY.md)
+**[Get the interactive workbook](Scam_Geography_Interactive_Economics_Project.xlsx)** · [Explore the data](data/state_panel_2022_2025.csv) · [Variable definitions](DATA_DICTIONARY.md)
 
 On the workbook page, choose **Download raw file**, then open the downloaded file in desktop Microsoft Excel. The images below are previews; the interactive controls are inside the workbook.
 
@@ -107,12 +107,15 @@ The [analysis-ready panel](data/state_panel_2022_2025.csv) and [data dictionary]
 
 ## Limits of the analysis
 
-IC3 complaints are voluntary reports, so the data measure reported outcomes rather than total fraud incidence. Reporting behavior and extreme incidents can influence state averages. State-level associations cannot establish individual risk or causal effects.
+- **Reporting, not incidence.** IC3 complaints are voluntary. Differences can reflect reporting behavior as well as fraud, and extreme incidents can influence state averages.
+- **States, not individuals.** State-level associations do not establish individual risk or causal effects.
+- **Short time span.** Four years provide limited within-state variation.
+- **Uncertainty matters.** HC1 standard errors address heteroskedasticity but do not account for within-state serial correlation through state clustering.
 
-Four years provide limited within-state variation. HC1 standard errors address heteroskedasticity; they do not account for within-state serial correlation through state clustering.
+Read rankings as comparisons of reported outcomes, not a “safest state” score. Read scenarios as sensitivity exercises, not forecasts.
 
 <details>
-<summary><strong>Workbook help</strong></summary>
+<summary><strong>Opening the workbook and troubleshooting</strong></summary>
 
 - **Where are the controls?** Open the downloaded workbook in desktop Excel and use the cream input cells. GitHub images are static previews.
 - **Values aren't updating?** Check that Excel calculation is set to Automatic, then recalculate.
@@ -138,4 +141,4 @@ Include the commit SHA or release tag and your access date when citing a particu
 
 **Skills demonstrated:** Excel · data visualization · economic decomposition · panel data · regression · fixed effects · robustness analysis
 
-**Portfolio summary:** Built an interactive Excel economics project using 204 state-year observations from FBI IC3 and Census ACS data to investigate geographic differences in reported online-fraud exposure and loss severity.
+[Back to top](#scam-geography)
