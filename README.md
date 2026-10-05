@@ -1,12 +1,16 @@
 # Scam Geography
 
-**The economics of reported online fraud across U.S. states**
+**The economics of reported internet crime across U.S. states**
 
-An individual research project by **Om Patel** · 2022–2025 · 51 jurisdictions · 204 state-year observations
+A research project by **Om Patel** · 2022–2025 · 51 jurisdictions · 204 state-year observations
 
-Why do some states report more fraud losses per resident than others?
+Why do some states report more internet-crime losses per resident than others?
 
-An interactive Excel investigation of complaint frequency, loss severity, and their relationship with income, internet access, and demographics. Compare states, explore a four-year panel, and test how model choice changes the interpretation.
+Compare states in Excel to examine reported complaint rates, losses per complaint, and their relationship with income, internet access, and age structure.
+
+**Release status:** Private review draft. The workbook and preview images still need terminology updates to match the scope described below.
+
+The data use IC3's state-level internet-crime totals, not a fraud-only subset. These totals include fraud and other reported offenses. See the [2025 IC3 report](https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf) for the distinction between all complaints and cyber-enabled fraud.
 
 **[Get the interactive workbook](Scam_Geography_Interactive_Economics_Project.xlsx)** · [Explore the data](data/state_panel_2022_2025.csv) · [Variable definitions](DATA_DICTIONARY.md)
 
@@ -77,7 +81,7 @@ Reported loss per resident also increased substantially from 2022 to 2025.
 
 **Reading the elasticity:** In the pooled model, 1% higher median household income is associated with approximately 1.55% higher reported loss per resident, holding the included controls and year effects constant. This is a percentage change, not a dollar change or a percentage-point change.
 
-The estimates support a geographic association. They do not establish that raising income causes higher fraud losses. See `Panel Models` for standard errors, approximate p-values, and additional robustness checks.
+The estimates support a geographic association. They do not establish that raising income causes higher reported internet-crime losses. See `Panel Models` for standard errors, approximate p-values, and additional robustness checks.
 
 <details>
 <summary><strong>Preview the national, regional, and state dashboards</strong></summary>
@@ -107,7 +111,7 @@ The [analysis-ready panel](data/state_panel_2022_2025.csv) and [data dictionary]
 
 ## Limits of the analysis
 
-- **Reporting, not incidence.** IC3 complaints are voluntary. Differences can reflect reporting behavior as well as fraud, and extreme incidents can influence state averages.
+- **Reporting, not incidence.** IC3 complaints are voluntary. Differences can reflect reporting behavior as well as crime, and extreme incidents can influence state averages.
 - **States, not individuals.** State-level associations do not establish individual risk or causal effects.
 - **Short time span.** Four years provide limited within-state variation.
 - **Uncertainty matters.** HC1 standard errors address heteroskedasticity but do not account for within-state serial correlation through state clustering.
@@ -133,7 +137,7 @@ Report and data links are also recorded in the workbook.
 
 ## Cite this project
 
-Patel, Om. *Scam Geography: The Economics of Reported Online Fraud Across U.S. States, 2022–2025*. Interactive Excel research project. [GitHub repository](https://github.com/Opatel23/scam-geography).
+Patel, Om. *Scam Geography: The Economics of Reported Internet Crime Across U.S. States, 2022–2025*. Interactive Excel research project. [GitHub repository](https://github.com/Opatel23/scam-geography).
 
 Include the commit SHA or release tag and your access date when citing a particular version. Cite the underlying data sources separately when using their data.
 
