@@ -43,7 +43,11 @@ This separates reported complaint frequency from average reported loss severity.
 
 Use the workbook's `Sources & Notes` sheet for the source trail and `Panel Models` for model specifications and uncertainty. The [project overview](README.md) summarizes findings and links to the source organizations.
 
+## Scope of the outcome
+
+The complaint and loss totals cover reported internet crime across IC3 categories. They are not restricted to cyber-enabled fraud. Do not label these variables as fraud-only counts or losses. The [2025 IC3 annual report](https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf) reports cyber-enabled fraud separately from all internet-crime complaints.
+
 ## Important interpretation note
 
-The dataset describes reported complaints and reported losses. It does not measure the complete incidence of fraud because not every victim reports to IC3 and reporting behavior may vary geographically.
+The dataset describes reported complaints and reported losses. It does not measure the complete incidence of internet crime because not every victim reports to IC3 and reporting behavior may vary geographically.
 
