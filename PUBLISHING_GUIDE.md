@@ -4,6 +4,10 @@ Scam Geography is an individual economics project by **Om Patel**. Keep the repo
 
 [Project overview](README.md) · [Data dictionary](DATA_DICTIONARY.md)
 
+## Release hold
+
+The workbook and preview images still use fraud terminology for all-category IC3 internet-crime totals. Update those labels and source notes consistently, regenerate the previews, and retest the workbook before making the repository public.
+
 ## Test the reader experience
 
 Download a fresh copy of the workbook from GitHub and open it in desktop Excel. GitHub's workbook page and the PNG previews are not interactive.
@@ -37,7 +41,7 @@ Only change repository visibility when you choose to publish. These checks do no
 
 **Repository description**
 
-Interactive economics analysis of reported online fraud across U.S. states, 2022–2025.
+Interactive economics analysis of reported internet crime across U.S. states, 2022–2025.
 
 **Suggested topics**
 
@@ -45,14 +49,14 @@ Interactive economics analysis of reported online fraud across U.S. states, 2022
 
 **Résumé bullet**
 
-Built an interactive Excel research project combining FBI IC3 and Census ACS data into a 204-observation state panel; used economic decomposition, fixed effects, and robustness checks to examine geographic variation in reported online-fraud losses.
+Built an interactive Excel research project combining FBI IC3 and Census ACS data into a 204-observation state panel; used economic decomposition, fixed effects, and robustness checks to examine geographic variation in reported internet-crime losses.
 
 **Short introduction**
 
-I built *Scam Geography* to explore how reported online-fraud losses vary across U.S. states. Readers can compare states, examine complaint frequency and loss severity, and test income-change scenarios while seeing the limits of what the data can establish.
+I built *Scam Geography* to explore how reported internet-crime losses vary across U.S. states. Readers can compare states, examine complaint frequency and loss severity, and test income-change scenarios while seeing the limits of what the data can establish.
 
 ## Suggested project citation
 
-Patel, Om. *Scam Geography: The Economics of Reported Online Fraud Across U.S. States, 2022–2025*. Interactive Excel research project. GitHub. https://github.com/Opatel23/scam-geography
+Patel, Om. *Scam Geography: The Economics of Reported Internet Crime Across U.S. States, 2022–2025*. Interactive Excel research project. GitHub. https://github.com/Opatel23/scam-geography
 
 For a reproducible citation, append the commit SHA or release tag used and the access date. Cite the underlying FBI IC3 and Census ACS sources separately when using their data; this project citation does not replace those sources.
