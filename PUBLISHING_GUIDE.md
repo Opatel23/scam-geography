@@ -1,12 +1,8 @@
 # Publication checklist
 
-Scam Geography is an individual economics project by **Om Patel**. Keep the repository private until you have completed the checks below and are ready to publish it.
+Scam Geography is an economics project by **Om Patel**. Use this checklist when preparing future updates.
 
 [Project overview](README.md) · [Data dictionary](DATA_DICTIONARY.md)
-
-## Release hold
-
-The workbook and preview images still use fraud terminology for all-category IC3 internet-crime totals. Update those labels and source notes consistently, regenerate the previews, and retest the workbook before making the repository public.
 
 ## Test the reader experience
 
@@ -29,7 +25,7 @@ If results appear unchanged, check that Excel calculation is set to Automatic an
 - [ ] All six preview images display on GitHub.
 - [ ] The workbook download and data links work.
 - [ ] The README agrees with the workbook's model estimates and limitations.
-- [ ] Reported complaints are not described as all fraud incidents or unique victims.
+- [ ] Reported complaints are not described as all internet-crime incidents or unique victims.
 - [ ] Associations and scenario calculations are not described as causal effects or forecasts.
 - [ ] The data dictionary explains units, lagged ACS timing, and rate denominators.
 - [ ] No Excel lock files beginning with `~$`, personal files, or credentials are included.

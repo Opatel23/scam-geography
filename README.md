@@ -8,8 +8,6 @@ Why do some states report more internet-crime losses per resident than others?
 
 Compare states in Excel to examine reported complaint rates, losses per complaint, and their relationship with income, internet access, and age structure.
 
-**Release status:** Private review draft. The workbook and preview images still need terminology updates to match the scope described below.
-
 The data use IC3's state-level internet-crime totals, not a fraud-only subset. These totals include fraud and other reported offenses. See the [2025 IC3 report](https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf) for the distinction between all complaints and cyber-enabled fraud.
 
 **[Get the interactive workbook](Scam_Geography_Interactive_Economics_Project.xlsx)** · [Explore the data](data/state_panel_2022_2025.csv) · [Variable definitions](DATA_DICTIONARY.md)
